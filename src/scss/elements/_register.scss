@@ -1,0 +1,36 @@
+.form {
+  display: flex;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: $font-ubuntu;
+  color: $color-gray;
+  justify-content: center;
+  border-top: 2px solid $color-light-gray;
+  border-bottom: 2px solid $color-light-gray;;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
+}
+
+.register-form__labels {
+  text-align: left;
+  margin-top: 4rem;
+  line-height: 3.53rem;
+}
+
+.inputs {
+  display: flex;
+  margin: 2rem;
+}
+
+.inputs-radio {
+  margin: 8px;
+}
+
+input[type='text'], input[type='password'], input[type='date'], input[type='radio'] .inputs-radio {
+  font-family: $font-ubuntu;
+}

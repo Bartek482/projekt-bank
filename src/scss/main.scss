@@ -1,0 +1,27 @@
+@import "varialbes/fonts";
+@import "varialbes/colors";
+
+@import "elements/header";
+@import "elements/cta";
+@import "elements/footer";
+@import "elements/login";
+@import "elements/register";
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: $font-ubuntu;
+  color: $color-gray;
+}
+
+h1 {
+  @media screen and (max-width: 430px) {
+    font-size: 1.5rem;
+  }
+}
+
+h2 {
+  @media screen and (max-width: 430px) {
+    font-size: 1rem;
+  }
+}

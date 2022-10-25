@@ -1,0 +1,39 @@
+.cta {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: $color-light-gray;
+  align-items: center;
+  height: 600px;
+  @media screen and (max-width: 430px) {
+    height: 200px;
+  }
+  @media screen and (max-width: 200px) {
+    display: none;
+  }
+}
+
+.cta-features {
+  font-size: 1rem;
+  line-height: 2rem;
+  @media screen and (max-width: 430px) {
+    display: none;
+    line-height: 0;
+  }
+}
+
+.logo2 {
+  width: 300px;
+  height: auto;
+  @media screen and (max-width: 930px) {
+    display: none;
+  }
+}
+
+.cta-text {
+  line-height: 5rem;
+  @media screen and (max-width: 430px) {
+    line-height: 2rem;
+    text-align: center;
+  }
+}

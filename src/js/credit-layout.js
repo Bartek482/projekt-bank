@@ -1,15 +1,15 @@
 import { Outlet } from "react-router-dom";
-import Cta from "./cta";
+import CreditForm from "./credit";
 import Footer from "./footer";
 
-const Layout = () => {
+const CreditLayout = () => {
     return (
         <>
             <Outlet />
-            <Cta />
-            <Footer/>
+            <CreditForm />
+            <Footer />
         </>
     );
 }
 
-export default Layout;
+export default CreditLayout;

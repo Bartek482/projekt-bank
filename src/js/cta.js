@@ -1,20 +1,8 @@
 import React from "react";
-import { useState } from "react";
-import CreditForm from "./js/credit";
+import { Link } from "react-router-dom";
 
-function App() {
-    const [myBool, setMyBool] = useState(true);
 
-    function toggleBool() {
-        setMyBool(!myBool)
-    }
-
-    return (
-        myBool ? <Cta toggleBool={toggleBool} /> : <Credit />
-    );
-}
-
-function Cta(props){
+function Cta() {
     return (
         <section>
             <div className="container">
@@ -27,10 +15,10 @@ function Cta(props){
                             <li>Lorem ipsum dolor sit amet.</li>
                             <li>Lorem ipsum dolor sit amet, consectetur.</li>
                         </ul>
-                        <button className="button-register" onClick={props.toggleBool}>Weź pożyczkę</button>
+                        <Link to="/credit"><button className="button-register">Weź pożyczkę</button></Link>
                     </div>
                     <div className="cta-logo">
-                        <img className="logo2" src={require("./images/Logo2.png")} alt='logo2'/>
+                        <img className="logo2" src={require("../images/Logo2.png")} alt='logo2'/>
                     </div>
                 </div>
             </div>
@@ -38,10 +26,4 @@ function Cta(props){
     )
 }
 
-function Credit(props){
-    return (
-        <CreditForm />
-    )
-}
-
-export default App;
+export default Cta;

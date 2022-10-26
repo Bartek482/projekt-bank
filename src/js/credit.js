@@ -38,7 +38,7 @@ function CreditForm() {
 
     const submit = () => {
         let doc = new jsPDF('p', 'pt');
-        
+
         doc.text(20, 20, 'Kwota pozyczki:')
         doc.text(140, 20, credit)
         doc.text(20, 40, 'Liczba rat:')
@@ -70,8 +70,8 @@ function CreditForm() {
                 </div>
                 <div className="register-form">
                     <form className="register-form_inputs">
-                        <input className="inputs" type="number"  value={credit} onChange = {(e) => handleInputChange(e)} id="credit" min="1000" max="20000" step='100' required />
-                        <input className="inputs" type="number"  value={installment} onChange = {(e) => handleInputChange(e)} id="installment" min="6" max="48" step='6' required />
+                        <input className="inputs" type="number"  value={credit} onChange = {(e) => handleInputChange(e)} id="credit" min="1000" max="20000" step='100' placeholder="1 - 20 tys." required />
+                        <input className="inputs" type="number"  value={installment} onChange = {(e) => handleInputChange(e)} id="installment" min="6" max="48" step='6' placeholder="6 - 48 rat" required />
                         <input className="inputs" type="text" value={client} onChange = {(e) => handleInputChange(e)} id="client" placeholder="Imię i nazwisko" required />
                         <input className="inputs" type="email" value={email} onChange = {(e) => handleInputChange(e)} id="email" placeholder="E-mail" required />
                         <input className="inputs" type="text" value={street} onChange = {(e) => handleInputChange(e)} id="street" placeholder="Ulica i nr mieszkania" required />

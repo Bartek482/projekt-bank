@@ -16,7 +16,7 @@ function Header() {
                     <li className="button">Bankowość prywatna</li>
                     <li className="button">Małe i średnie firmy</li>
                     <li className="button">Przedsiębiorstwa</li>
-                    <li className="button">Weź pożyczkę</li>
+                    <Link to="/credit"><li className="button">Weź pożyczkę</li></Link>
                 </ul>
             </div>
         </header>

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {database} from '../firebase'
 import {ref,push,child,update} from "firebase/database";
-import Header from "./header";
 
 function RegisterForm() {
     const [firstName, setFirstName] = useState(null);
@@ -49,8 +48,6 @@ function RegisterForm() {
     }
 
     return (
-        <>
-            <Header />
             <div className="form">
                 <h2 className="register-form__title">Załóż konto</h2>
                 <div className="register-form__labels">
@@ -71,7 +68,6 @@ function RegisterForm() {
                     </form>
                 </div>
             </div>
-        </>
     );
 }
 

@@ -16,6 +16,11 @@
   margin: 3rem;
 }
 
+.register-form__title {
+  position: absolute;
+  margin-top: 1rem;
+}
+
 .register-form__labels {
   text-align: left;
   margin-top: 4rem;
@@ -25,6 +30,7 @@
 .inputs {
   display: flex;
   margin: 2rem;
+  width: 150px;
 }
 
 .inputs-radio {

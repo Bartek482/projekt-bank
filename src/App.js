@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { RegisterForm } from "./js/register";
+import CreditForm from "./js/credit";
 
 function App() {
     const [myBool, setMyBool] = useState(true);
@@ -10,7 +10,7 @@ function App() {
     }
 
     return (
-        myBool ? <Cta toggleBool={toggleBool} /> : <Register />
+        myBool ? <Cta toggleBool={toggleBool} /> : <Credit />
     );
 }
 
@@ -27,7 +27,7 @@ function Cta(props){
                             <li>Lorem ipsum dolor sit amet.</li>
                             <li>Lorem ipsum dolor sit amet, consectetur.</li>
                         </ul>
-                        <button className="button-register" onClick={props.toggleBool}>Załóż konto</button>
+                        <button className="button-register" onClick={props.toggleBool}>Weź pożyczkę</button>
                     </div>
                     <div className="cta-logo">
                         <img className="logo2" src={require("./images/Logo2.png")} alt='logo2'/>
@@ -38,9 +38,9 @@ function Cta(props){
     )
 }
 
-function Register(props){
+function Credit(props){
     return (
-        <RegisterForm />
+        <CreditForm />
     )
 }
 

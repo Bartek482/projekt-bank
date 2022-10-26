@@ -1,4 +1,4 @@
-export function Footer() {
+function Footer() {
     return (
         <section>
           <div className="container">
@@ -59,3 +59,5 @@ export function Footer() {
         </section>
     );
 }
+
+export default Footer;

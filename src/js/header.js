@@ -1,11 +1,12 @@
-export function Header() {
+import { Link } from "react-router-dom";
+function Header() {
     return (
         <header>
             <div className="container">
                 <div className="header">
-                    <img className="logo" src={require("../images/Logo.png")} alt="" />
+                    <Link to="/"><img className="logo" src={require("../images/Logo.png")} alt="logo" /></Link>
                     <div className="client-menu">
-                        <a className="button-register" href="#">Otwórz konto</a>
+                        <Link to="/register"><button className="button-register">Otwórz konto</button></Link>
                         <a className="button-login" href="#">Zaloguj się</a>
                     </div>
                 </div>
@@ -21,3 +22,5 @@ export function Header() {
         </header>
     );
 }
+
+export default Header;
